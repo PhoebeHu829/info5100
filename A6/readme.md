@@ -34,7 +34,7 @@ Your job is to complete the classes and check with the unit test program of each
 	
 	•	The class have the following three protected data members: FirstName (a String), LastName (a String), and CurBalance (a double).
 	
-	•	FFollowing are the public methods that this class provides.  Your job is to fill the ones marked with (*).
+	•	Following are the public methods that this class provides.  Your job is to fill the ones marked with (*).
 	
 	•	public Account(String fname, String lname, double curbalance) // constructor with parameters
 	
@@ -49,14 +49,18 @@ Your job is to complete the classes and check with the unit test program of each
 2. Class CheckingAccount (partially filled "CheckingAccount.java")
 This account type has to have a pre-set minimum balance. For every transaction resulting in (i.e., AFTER the transaction) the amount less than the minimum balance, a pre-set penalty fee is charged.  The balance can become negative.  Following are the methods that this class provides. Your job is to fill the ones marked with (*). :
 	•	public CheckingAccount(String fname, String lname, double cb) (*) -- The three parameters should be utilized to initialize the members inherited from the base class Account.   -- Call the super class Account's constructor to do so.
+	
 	•	public double DebitTransaction(double debitAmount) (*) -- This method overrides the method with the same name inherited from the super class Account. -- First call the super class' method (with the given parameter).  Then call ChargeFee() of this class to possibly charge a fee (if the resulting balance went down below the MinBalance). -- Then returns the resulting CurBalance.
+	
 	•	public double CreditTransaction(double creditAmount) (*) -- This method overrides the method with the same name inherited from the super class Account. -- First call the super class' method (with the given parameter).  Then call ChargeFee() of this class to possibly charge a fee (if the resulting balance is still below the MinBalance).Adds the transaction amount to the account and possibly charges a transaction fee. -- Then returns the resulting CurBalance.
+	
 	•	private void ChargeFee() (*) -- This is a private method.  It is called internally by the debit and credit transaction methods. -- This method subtracts Fee from CurBalance if the current CurBalance is below (<) MinBalance.
 
 Part C:
 This assignment requires you to develop an object oriented software system in Java that will keep track of pets treated and boarded in an animal hospital. Detail class specifications (data members, methods and access modifiers) are described below. Please note the following requirements: 
 
 • You need to implement each class in a separate file. 
+
 • While implementing the design you may want to follow the order the classes are specified below and test each class individually. 
 
 
@@ -65,12 +69,19 @@ Class: Pet (File name: Pet.java)
 The class should have the following three private data members, Pet name (a String), owner name (a String), and color (a String), and one protected data members for sex (an integer, but it will only hold one of the following four public static final int values: MALE, FEMALE, SPAYED and NEUTERED. You should define these four static finals in your class). 
 
 Following are the public methods that this class should provide: 
+
 Pet (String name, String ownerName, String color); //Constructor 
+
 String getPetName(); 
+
 String getOwnerName(); 
+
 String getColor(); 
+
 void setSex(int sexid); 
+
 String getSex(); // Should return the string equivalent of the gender, e.g the string “MALE” etc. 
+
 String toString(); // Should return the name, owner’s name, age, color, and gender (use getSex()); 
 
 A Sample (preferred) return value by toString is as follows: 
@@ -85,7 +96,9 @@ Interface: Boardable (File name: Boardable.java)
 This interface, should include the following public methods: 
 
 void setBoardStart(int month, int day, int year); 
+
 void setBoardEnd(int month, int day, int year); 
+
 boolean boarding(int month, int day, int year); 
 
 See the Cat and Dog classes for what these methods should do when implemented. Note, the month will be in the range 1-12, day in the range 1-31, and year will be a four digit number. 
