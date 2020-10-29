@@ -31,13 +31,21 @@ Implement the following two classes which are in an inheritance relation:
 Your job is to complete the classes and check with the unit test program of each class written in the partially filled code.
 1. Class Account (partially filled "Account.java")
 	•	Class Account is a superclass of CheckingAccount and SavingsAccount.  
+	
 	•	The class have the following three protected data members: FirstName (a String), LastName (a String), and CurBalance (a double).
+	
 	•	FFollowing are the public methods that this class provides.  Your job is to fill the ones marked with (*).
+	
 	•	public Account(String fname, String lname, double curbalance) // constructor with parameters
+	
 	•	public String getAcctType()  -- Returns a String of the class name "Account" (and that's all it does).
+	
 	•	public double DebitTransaction(double debitAmount) (*) -- Subtracts the transaction debit amount from the current balance, and returns the new balance.  No condition check is required for subtracting.
+	
 	•	public double CreditTransaction(double creditAmount) (*) -- Adds the transaction credit amount to the current balance, and returns the new balance.
+	
 	•	public String toString() --- Returns a String representation of the class, in the form "Account name: .., Account Type: ..., Balance $..". 
+	
 2. Class CheckingAccount (partially filled "CheckingAccount.java")
 This account type has to have a pre-set minimum balance. For every transaction resulting in (i.e., AFTER the transaction) the amount less than the minimum balance, a pre-set penalty fee is charged.  The balance can become negative.  Following are the methods that this class provides. Your job is to fill the ones marked with (*). :
 	•	public CheckingAccount(String fname, String lname, double cb) (*) -- The three parameters should be utilized to initialize the members inherited from the base class Account.   -- Call the super class Account's constructor to do so.
