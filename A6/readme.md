@@ -30,6 +30,7 @@ Implement the following two classes which are in an inheritance relation:
    CheckingAccount 
 Your job is to complete the classes and check with the unit test program of each class written in the partially filled code.
 1. Class Account (partially filled "Account.java")
+
 	•	Class Account is a superclass of CheckingAccount and SavingsAccount.  
 	
 	•	The class have the following three protected data members: FirstName (a String), LastName (a String), and CurBalance (a double).
