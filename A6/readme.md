@@ -49,6 +49,7 @@ Your job is to complete the classes and check with the unit test program of each
 	
 2. Class CheckingAccount (partially filled "CheckingAccount.java")
 This account type has to have a pre-set minimum balance. For every transaction resulting in (i.e., AFTER the transaction) the amount less than the minimum balance, a pre-set penalty fee is charged.  The balance can become negative.  Following are the methods that this class provides. Your job is to fill the ones marked with (*). :
+
 	•	public CheckingAccount(String fname, String lname, double cb) (*) -- The three parameters should be utilized to initialize the members inherited from the base class Account.   -- Call the super class Account's constructor to do so.
 	
 	•	public double DebitTransaction(double debitAmount) (*) -- This method overrides the method with the same name inherited from the super class Account. -- First call the super class' method (with the given parameter).  Then call ChargeFee() of this class to possibly charge a fee (if the resulting balance went down below the MinBalance). -- Then returns the resulting CurBalance.
