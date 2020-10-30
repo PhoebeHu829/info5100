@@ -30,7 +30,7 @@ public class Pet {
 		if(sexid >= 1 && sexid <= 4) {
 			this.sex = sexid;
 		} else {
-			System.out.println("Invalid input. sexid should be an integer in the range of 1 to 4, inclusive.");
+			System.out.println("Invalid input. sexid should be an integer in the range of 1 to 4 inclusive.");
 		}
 	}
 	
